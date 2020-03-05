@@ -3,7 +3,7 @@ var total = 0;
 
 var temporary = emptyString;
 
-"button".onclick(function());
+"button".onclick(calcDisplay);
 
 def calcDisplay() {
     var val = pressed button to textcontent
@@ -23,7 +23,7 @@ def calcDisplay() {
         set answerDisplay to empty string
     } else if (val is multiply) {
         entries.push(temporary)
-        entries.push(multiply)
+        entries.push("multiply")
         temporary = empty string
     } else if (val is divide) {
         entries.push(temporary)
