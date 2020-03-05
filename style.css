@@ -29,7 +29,7 @@
 #display {
     display: grid;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: end;
     padding: 10px 20px 10px 1px;
     font-size: 50px;
     width: 280px;
