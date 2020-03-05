@@ -5,17 +5,17 @@
         <link rel="stylesheet" type="text/css" href="style.css"></link>
     </head>
     <body>
-        <div id="container">
-            <div id="calculator">
-                <div id="display">0</div>
-                <button id="ac" class="keys top">AC</button>
-                <button id="ce" class="keys top">CE</button>
-                <button id="divide" class="keys top">÷</button>
-                <button id="multiply" class="keys side">x</button>
-                <button id="plus" class="keys side">+</button>
-                <button id="minus" class="keys side">-</button>
-                <button id="decimal" class="keys">.</button>
-                <button id="equal" class="keys side">=</button>
+        <div id="calculator">
+            <div id="display">0</div>
+            <div id="calculator-keys">
+                <button id="ac" class="keys top" data-action="all-clear">AC</button>
+                <button id="ce" class="keys top" data-action="clear-entry">CE</button>
+                <button id="divide" class="keys top" data-action="divide">÷</button>
+                <button id="multiply" class="keys side" data-action="multiply">x</button>
+                <button id="plus" class="keys side" data-action="add">+</button>
+                <button id="minus" class="keys side" data-action="subtract">-</button>
+                <button id="decimal" class="keys" data-action="decimal">.</button>
+                <button id="equal" class="keys side" data-action="evaluate">=</button>
                 <button id="one" class="keys">1</button>
                 <button id="two" class="keys">2</button>
                 <button id="three" class="keys">3</button>
