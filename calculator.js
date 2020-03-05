@@ -12,15 +12,12 @@ multiplyNums = (first, second) => { return first * second };
 divideNums = (first, second) => { return first / second };
 
 evaluateNums = (first, operator, second) => {
-    let result = "";
     const firstNum = parseFloat(first);
     const secondNum = parseFloat(second);
-    if (operator === "add") { result = addNums(firstNum, secondNum) }
-    else if (operator === "subtract") { result = subtractNums(firstNum, secondNum) }
-    else if (operator === "multiply") { result = multiplyNums(firstNum, secondNum) }
-    else if (operator === "divide") { result = divideNums(firstNum, secondNum) }
-
-    return result;
+    if (operator === "add") return addNums(firstNum, secondNum);
+    if (operator === "subtract") return subtractNums(firstNum, secondNum);
+    if (operator === "multiply") return multiplyNums(firstNum, secondNum);
+    if (operator === "divide") return divideNums(firstNum, secondNum);
 }
 
 
