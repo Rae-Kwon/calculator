@@ -21,7 +21,7 @@
     "one     two     three   equal   "
     "zero    zero    decimal equal   ";
     height: 400px;
-    width: 300px;
+    width: 300.5px;
     border: 1px solid black;
     
 }
@@ -30,7 +30,7 @@
     display: grid;
     align-items: center;
     justify-content: flex-end;
-    padding: 10px 20px 10px 0;
+    padding: 10px 20px 10px 1px;
     font-size: 50px;
     width: 280px;
     background-color: rgb(87, 87, 87);
