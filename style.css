@@ -1,0 +1,93 @@
+* {
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+#calculator-keys {
+    display: grid;
+    grid-template-areas:
+    "ac      ce      divide  multiply"
+    "seven   eight   nine    minus   "
+    "four    five    six     plus    "
+    "one     two     three   equal   "
+    "zero    zero    decimal equal   ";
+    height: 400px;
+    width: 300.5px;
+    border: 1px solid black;
+    border-radius: 0 0 20px 20px;
+}
+
+#display {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 20px 10px 1px;
+    font-size: 50px;
+    width: 280px;
+    background-color: rgb(87, 87, 87);
+    border: 1px solid black;
+    border-radius: 20px 20px 0 0;
+}
+
+#ac {grid-area: ac;}
+#ce {grid-area: ce;}
+#divide {grid-area: divide;}
+#multiply {grid-area: multiply;}
+#plus {grid-area: plus;}
+#minus {grid-area: minus;}
+#decimal {grid-area: decimal;}
+#equal {grid-area: equal; border-radius: 0 0 20px 0;}
+#one {grid-area: one;}
+#two {grid-area: two;}
+#three {grid-area: three;}
+#four {grid-area: four;}
+#five {grid-area: five;}
+#six {grid-area: six;}
+#seven {grid-area: seven;}
+#eight {grid-area: eight;}
+#nine {grid-area: nine;}
+#zero {grid-area: zero; border-radius: 0 0 0 20px;}
+
+.keys {
+    border: rgb(39, 39, 39) 1px solid;
+    background-color: rgb(145, 145, 145);
+}
+
+.top {
+    background-color: rgb(110, 110, 110);
+}
+
+.side {
+    background-color: orange;
+}
+
+.side:active {
+    background-color: rgb(201, 130, 0);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: gainsboro;
+}
+
+.side.is-pressed {
+    border: 1.5px solid rgb(0, 0, 0);
+}
+
+.top.is-pressed {
+    border: 1.5px solid rgb(0, 0, 0);
+}
+
